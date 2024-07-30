@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: #011222;
+    height: 60px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.mobile {
+    display: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    /* margin-top: 15px; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logoText {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    /* margin-top: 15px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin: auto; */
+}
+
+.logoTextUp {
+    color: #AAFF00;
+}
+
+.logoTextDown {
+    color: #097969;
+}
+
+.logoSection {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.searchSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBtn,
+.greenBtn,
+.redBtn {
+    padding: 4px;
+    margin-left: 10px;
+    background-color: #AAFF00;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.redBtn {
+    background-color: #D22B2B;
+}
+
+.greenBtn:hover {
+    cursor: pointer;
+    background-color: #097969;
+}
+
+.redBtn:hover {
+    cursor: pointer;
+    background-color: #D70040;
+}
+
+#search {
+    padding: 4px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* input Section Css  */
+
+.InputSection {
+    background-color: #023020;
+    max-width: 800px;
+    border-radius: 10px;
+    /* box-shadow: inset 0px 0px 20px 4px #5F8575; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.passImg {
+    width: 25px;
+    padding: 2px;
+    transition: all 0.3s;
+}
+
+.InputText {
+    color: #ECFFDC;
+}
+
+label {
+    color: #00FF7F;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.form input {
+    outline: none;
+}
+
+#web,
+#user {
+    width: 70%;
+    height: 30px;
+}
+
+.passwordInput {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+#pass {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 90%;
+}
+
+.webSection,
+.passwordSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subBtn {
+    justify-self: right;
+    width: 60px;
+    height: 30px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.heading {
+    background-color: #90EE90;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.heading li {
+    list-style: none;
+    /* margin: auto; */
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/* / List Component Css ?.................. */
+
+
+
+.List {
+    background-color: #0FFF50;
+    margin-top: 20px;
+}
+
+.List li {
+    list-style: none;
+    /* margin: auto; */
+    padding: 10px;
+    text-align: center;
+    user-select: none;
+    /* justify-content: center; */
+
+}
+
+.List ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.eye {
+    width: 25px;
+    /* margin-left: 2px; */
+}
+
+.func {
+    justify-self: flex-end;
+}
+
+.userName,
+.url {
+    justify-self: flex-start;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.url {
+    width: 40%;
+    justify-content: space-between;
+}
+
+.url p,
+.userName p,
+.passw {
+    width: 80%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pass {
+    width: 20%;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 550px) {
+    .NavBar {
+        flex-direction: column;
+        height: max-content;
+        width: 100vw;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .actions,
+    .func {
+        display: none;
+    }
+
+    .func2 {
+        display: block;
+        background-color: #1206069e;
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+        margin-left: -10px;
+        border-radius: 10px;
+        align-items: center;
+        gap: 10px;
+        margin-top: 12px;
+    }
+    .eye,.delete,.edit{
+        width: 25px;
+    }
+    .mobile {
+        display: block;
+    }
+    
+    
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    .searchBtn {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .webSection,
+    .passwordSection {
+        flex-direction: column;
+
+    }
+
+    #web,
+    #user,
+    .passwordInput {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* POPUP.                                             */
